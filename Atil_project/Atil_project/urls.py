@@ -18,6 +18,6 @@ from django.urls import path
 from zmeya import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='home'),
-    path('about/', views.about, name='about'),
+    path('', views.homePageView, name='home'),
+    path('about/', views.aboutPageView, name='about'),
 ]
